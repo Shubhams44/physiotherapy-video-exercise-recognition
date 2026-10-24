@@ -79,13 +79,13 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 # 5. Start the backend development server
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
-- **Backend API URL**: `http://127.0.0.1:8000`
-- **Interactive Swagger Documentation**: `http://127.0.0.1:8000/docs`
-- **ReDoc Documentation**: `http://127.0.0.1:8000/redoc`
-- **Health Endpoint**: `http://127.0.0.1:8000/health` or `http://127.0.0.1:8000/api/health`
+- **Backend API URL**: `http://127.0.0.1:8001`
+- **Interactive Swagger Documentation**: `http://127.0.0.1:8001/docs`
+- **ReDoc Documentation**: `http://127.0.0.1:8001/redoc`
+- **Health Endpoint**: `http://127.0.0.1:8001/health` or `http://127.0.0.1:8001/api/health`
 
 ---
 
@@ -101,7 +101,7 @@ npm install
 npm run dev
 ```
 
-- **Frontend URL**: `http://127.0.0.1:5173/` or `http://localhost:5173/`
+- **Frontend URL**: `http://localhost:5175/` (or `http://127.0.0.1:5175/`)
 
 ---
 

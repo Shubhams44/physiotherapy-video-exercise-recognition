@@ -55,7 +55,7 @@ export default function ErrorMessage({
             To enable live computer vision processing, start your Python FastAPI server locally:
           </p>
           <div className="bg-black/60 rounded-lg p-3 font-mono text-[12px] text-teal-300 border border-slate-800 select-all">
-            uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+            uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
           </div>
           <p className="text-slate-400 text-[11px]">
             Target Base URL configured in <code className="text-teal-300">.env</code>: <span className="underline">{API_BASE_URL}</span>

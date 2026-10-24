@@ -39,7 +39,7 @@ import axios from 'axios';
  * }
  */
 
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8001';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -126,7 +126,7 @@ export async function analyzeVideo({ videoFile, exerciseType, notes = '', onUplo
         throw new Error(`Video processing timed out. The backend server at ${API_BASE_URL} took too long to respond.`);
       }
       throw new Error(
-        `Backend server unreachable at ${API_BASE_URL}. Please ensure your Python FastAPI server is running (e.g., uvicorn main:app --reload --port 8000).`
+        `Backend server unreachable at ${API_BASE_URL}. Please ensure your Python FastAPI server is running (e.g., uvicorn app.main:app --reload --port 8001).`
       );
     }
 

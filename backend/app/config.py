@@ -10,11 +10,14 @@ API_DESCRIPTION = "FastAPI service for physiotherapy movement recognition, kinem
 
 # Server Config
 HOST = os.getenv("HOST", "127.0.0.1")
-PORT = int(os.getenv("PORT", 8000))
+PORT = int(os.getenv("PORT", 8001))
 
 # CORS Configuration
-# Include Vite frontend default ports (5173, 3000)
-cors_env = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000")
+# Include Vite frontend development ports (5173, 5174, 5175, 3000)
+cors_env = os.getenv(
+    "CORS_ORIGINS",
+    "http://localhost:5175,http://127.0.0.1:5175,http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000"
+)
 CORS_ORIGINS = [origin.strip() for origin in cors_env.split(",") if origin.strip()]
 
 # Upload Limits

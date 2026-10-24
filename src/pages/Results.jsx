@@ -115,7 +115,7 @@ export default function Results() {
               <Badge variant="amber" size="sm">Mock Data</Badge>
             </div>
             <p className="text-amber-800 leading-relaxed">
-              These results are populated using structured sample data to showcase the UI components, charts, and feedback cards. Once your Python FastAPI server is active at <code className="font-mono bg-amber-100 px-1 py-0.5 rounded text-amber-950">http://localhost:8000</code>, real computer-vision metrics will appear here.
+              These results are populated using structured sample data to showcase the UI components, charts, and feedback cards. Once your Python FastAPI server is active at <code className="font-mono bg-amber-100 px-1 py-0.5 rounded text-amber-950">http://127.0.0.1:8001</code>, real computer-vision metrics will appear here.
             </p>
           </div>
         </div>

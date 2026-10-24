@@ -196,7 +196,7 @@ async def analyze_video(
         "annotated_frames": []
     }
 
-# Run with: uvicorn main:app --reload --port 8000`;
+# Run with: uvicorn app.main:app --reload --port 8001`;
 
   const copyCodeToClipboard = () => {
     navigator.clipboard.writeText(fastApiSnippet);
@@ -387,9 +387,9 @@ async def analyze_video(
         </div>
 
         <div className="text-xs text-slate-400 space-y-1">
-          <p>• Save this as <code className="text-teal-300">main.py</code> in your future backend directory.</p>
-          <p>• Run <code className="text-teal-300">pip install fastapi uvicorn python-multipart mediapipe opencv-python</code>.</p>
-          <p>• Start the server via <code className="text-teal-300">uvicorn main:app --reload --port 8000</code> to receive video uploads.</p>
+          <p>• Backend entrypoint located in <code className="text-teal-300">backend/app/main.py</code>.</p>
+          <p>• Dependencies installed in Python 3.11 virtual environment (<code className="text-teal-300">backend/.venv</code>).</p>
+          <p>• Run server via <code className="text-teal-300">uvicorn app.main:app --reload --port 8001</code> to receive video uploads.</p>
         </div>
       </section>
 

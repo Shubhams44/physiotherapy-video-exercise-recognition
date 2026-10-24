@@ -68,10 +68,10 @@ copy .env.example .env
 
 ### Step 5: Start the Development Server
 ```powershell
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
 ```
-- API is accessible at: `http://127.0.0.1:8000`
-- Interactive Swagger docs: `http://127.0.0.1:8000/docs`
+- API is accessible at: `http://127.0.0.1:8001`
+- Interactive Swagger docs: `http://127.0.0.1:8001/docs`
 
 ---
 
